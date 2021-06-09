@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
-	entry:"./src/index.tsx",
+	entry:"./src/client/index.tsx",
 	output:{
 		path:path.join(__dirname,"build"),
 		filename:"bundle.js",
@@ -13,7 +13,7 @@ module.exports = {
 		extensions:[".tsx",".ts",".js"],
 	},
 	devServer:{
-		contentBase:path.join(__dirname,"src")
+		contentBase:path.join(__dirname,"src/client")
 	},
 	module:{
 		rules:[
@@ -39,7 +39,7 @@ module.exports = {
 	},
 	plugins:[
 		new HtmlWebpackPlugin({
-			template: path.join(__dirname,"src","index.html")
+			template: path.join(__dirname,"src/client","index.html")
 		}),
 		new CompressionPlugin()
 	],

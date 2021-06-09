@@ -23,7 +23,7 @@ app.get('*.js', (req, res, next) => {
 
 
 
-app.use(express.static(path.join(__dirname+"/../build")))
+app.use(express.static(path.join(__dirname+"/../../build")))
 // console.log()
 app.use(cors())
 app.get("/api",(req,res)=>{

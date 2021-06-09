@@ -6,8 +6,8 @@
   "scripts": {
     "webpack": "webpack",
     "start": "webpack serve",
-    "server":"nodemon server/index.js",
-    "build":"webpack && nodemon server/index.js",
+    "server":"nodemon src/server/index.js",
+    "build":"webpack && nodemon src/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
